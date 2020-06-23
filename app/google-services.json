@@ -1,0 +1,91 @@
+{
+  "project_info": {
+    "project_number": "778930659835",
+    "firebase_url": "https://glogin-1545374067608.firebaseio.com",
+    "project_id": "glogin-1545374067608",
+    "storage_bucket": "glogin-1545374067608.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778930659835:android:7b9beaf8e7dbcb19",
+        "android_client_info": {
+          "package_name": "com.g_login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778930659835-ofjikih45ibruq1aiomv1t23lcdf6dfv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.g_login",
+            "certificate_hash": "53e33363f6e2d19c1fe6a902c1dfd75da4de4922"
+          }
+        },
+        {
+          "client_id": "778930659835-krc0egp9h3okoj2skqhu5ulnna955kdj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG-6IRQhoQErA21aMqYzv_euAl_efbQZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778930659835-krc0egp9h3okoj2skqhu5ulnna955kdj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "778930659835-jvtsj8gom5rbs8ihm77gcvqm9b7j3l3l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pavkage"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778930659835:android:3019045ea4de5282e92b5e",
+        "android_client_info": {
+          "package_name": "com.google.firebase.samples.apps.mlkit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778930659835-krc0egp9h3okoj2skqhu5ulnna955kdj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG-6IRQhoQErA21aMqYzv_euAl_efbQZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778930659835-krc0egp9h3okoj2skqhu5ulnna955kdj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "778930659835-jvtsj8gom5rbs8ihm77gcvqm9b7j3l3l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pavkage"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

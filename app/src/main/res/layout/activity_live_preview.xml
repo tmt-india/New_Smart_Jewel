@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fireTopLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:keepScreenOn="true">
+
+    <ToggleButton
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/facingSwitch"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:background="@layout/toggle_style"
+        android:textOff=""
+        android:textOn=""
+        android:checked="false" />
+
+
+
+    <com.google.firebase.samples.apps.mlkit.common.CameraSourcePreview
+        android:id="@+id/firePreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <com.google.firebase.samples.apps.mlkit.common.GraphicOverlay
+            android:id="@+id/fireFaceOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"/>
+
+    </com.google.firebase.samples.apps.mlkit.common.CameraSourcePreview>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="#926F6E6E"
+        android:alpha="1.9"
+        android:layout_above="@+id/earingRecyclerVw"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/necklaceRecyclerVw"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="#926F6E6E"
+        android:visibility="gone"
+        android:alpha="1.9"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/earingRecyclerVw"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="#926F6E6E"
+        android:visibility="gone"
+        android:alpha="1.9"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hairStyleRecyclerVw"/>
+
+    <ImageView
+        android:id="@+id/imgOval"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:alpha="0.3"
+        android:layout_width="350dp"
+        android:layout_height="350dp"/>
+
+    <TextView android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="80dp"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/control"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_toEndOf="@id/firePreview"
+        android:background="#000">
+
+
+        <Spinner
+            android:layout_marginStart="100dp"
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+
+
+        <ToggleButton
+            android:layout_marginStart="50dp"
+            android:id="@+id/jewelSwitch"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:textOff=""
+            android:textOn=""
+            android:checked="false" />
+
+
+    </FrameLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu_red"
+        android:layout_marginBottom="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        fab:menu_colorNormal="@color/blue"
+        android:paddingLeft="10dp"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabCamSwitch"
+            android:layout_width="wrap_content"
+            fab:fab_colorNormal="@color/blue"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_delete"
+            fab:fab_size="mini"
+            fab:fab_label="Clear All"
+            android:checked= "true"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabEarring"
+            android:layout_width="wrap_content"
+            fab:fab_colorNormal="@color/blue"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_earring"
+            fab:fab_size="mini"
+            fab:fab_label="Earrings" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:visibility="gone"
+            android:id="@+id/fabNecklace"
+            android:layout_width="wrap_content"
+            fab:fab_colorNormal="@color/blue"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_necklace"
+            fab:fab_size="mini"
+            fab:fab_label="Necklace" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:visibility="gone"
+            android:id="@+id/fabHairStyle"
+            android:layout_width="wrap_content"
+            fab:fab_colorNormal="@color/blue"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_hairstyle"
+            fab:fab_size="mini"
+            fab:fab_label="HairStyle" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+
+</RelativeLayout>
